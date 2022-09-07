@@ -10,7 +10,7 @@ public class SpringbootDemoApplication {
 
 	public static void main(String[] args) {
 
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+		/**AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 		context.scan("com.example.SpringbootDemo");
 		// as we dont want the previous session , to be called from the cache memory //
 		context.refresh();
@@ -19,7 +19,8 @@ public class SpringbootDemoApplication {
 
 		componentDemo.demoFunction();
 
-		context.close();
+		context.close();**/
+		SpringApplication.run(SpringbootDemoApplication.class,args);
 
 	}
 
